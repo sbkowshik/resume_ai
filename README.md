@@ -24,12 +24,13 @@ Implementation of a prototype for a merchant name normalization pipeline that wi
 ```
 1. Install Docker
 
-2. Create a public repository (example - sbkowshik/merch-norm-pipeline)
+2. Create a public repository on https://hub.docker.com/ (example - sbkowshik/merch-norm-pipeline)
 
 3. CLI (Example) -
-docker Login
-docker build --build-arg SERVICE=api -t sbkowshik/merch-norm-pipeline:api-latest -f Dockerfile-api .
-docker push sbkowshik/merch-norm-pipeline:api-latest
+    docker Login
+    docker build --build-arg SERVICE=api -t sbkowshik/merch-norm-pipeline:api-latest -f Dockerfile-api .
+    docker push sbkowshik/merch-norm-pipeline:api-latest
+
 4. Get the container url from the repository (example - sbkowshik/merch-norm-pipeline:api-latest)
 
 5. Put the Container URL in the Cloud Run service
