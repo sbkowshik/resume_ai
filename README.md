@@ -3,14 +3,13 @@ Implementation of a prototype for a merchant name normalization pipeline that wi
 
 ### Required APIs
 ```
-1. HUGGINGFACEHUB_API_TOKEN
-2. QDRANT_URL
-3. QDRANT_API_KEY
-4. REDIS_URL
-5. REDIS_PASSWORD
-6. GOOGLE_API_KEY
-7. SERPER_API_KEY
-8. EXA_API_KEY
+1. QDRANT_URL
+2. QDRANT_API_KEY
+3. REDIS_URL
+4. REDIS_PASSWORD
+5. GOOGLE_API_KEY
+6. SERPER_API_KEY
+7. EXA_API_KEY
 ```
 
 ### Steps for Local Hosting
