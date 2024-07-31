@@ -20,3 +20,19 @@ Implementation of a prototype for a merchant name normalization pipeline that wi
 3. Create a .env file and paste your APIs
 4. Starting the FastAPI application - uvicorn api_endpoint:app --reload
 ```
+### Steps for Cloud Hosting (GCP)
+```
+1. Install Docker
+2. Create a public repository (example - sbkowshik/merch-norm-pipeline)
+3. CLI (Example) -
+docker Login
+docker build --build-arg SERVICE=api -t sbkowshik/merch-norm-pipeline:api-latest -f Dockerfile-api .
+docker push sbkowshik/merch-norm-pipeline:api-latest
+4. Get the container url from the repository (example - sbkowshik/merch-norm-pipeline:api-latest)
+5. Put the Container URL in the Cloud Run service
+6. Set the Port to the port in the code (8000)
+7. Set up the environmental variables and choose appropriate configuration
+8. Deploy
+9. Automate the Deployment
+```
+
