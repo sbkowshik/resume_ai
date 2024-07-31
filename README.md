@@ -13,10 +13,10 @@ Implementation of a prototype for a merchant name normalization pipeline that wi
 8. EXA_API_KEY
 ```
 
-### Steps 
+### Steps for Local Hosting
 ```
 1. Clone the repository - git clone https://github.com/sbkowshik/merchant_normalization_pipeline.git
 2. Install dependencies - pip install -r requirements.txt
-3. Create a .env file - and past your APIs
-4. Starting the FastAPI application - vicorn api_endpoint:app --reload
+3. Create a .env file and paste your APIs
+4. Starting the FastAPI application - uvicorn api_endpoint:app --reload
 ```
